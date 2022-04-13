@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  @apply px-2;
+}
+

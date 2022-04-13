@@ -1,0 +1,41 @@
+.header{
+  @apply bg-light-yellow-300;
+  @apply py-5;
+  & > div {
+    @apply flex;
+    @apply flex-col;
+    @apply gap-y-3;
+    @apply md:justify-between; 
+    @apply md:flex-row;
+    @apply items-center;
+  }
+
+  nav {
+    ul {
+      @apply flex;
+      @apply gap-x-3;
+
+      li{
+        a{
+          @apply uppercase;
+          @apply text-primary;
+          @apply font-bold;
+          @apply font-ComicNeue;
+          @apply text-lg;
+        }
+      }
+    }
+  }
+
+
+  .icons{
+    @apply flex;
+    @apply gap-x-3;
+    img{
+      @apply h-9;
+      @apply w-9;
+    }
+  }
+}
+
+
