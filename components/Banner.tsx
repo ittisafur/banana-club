@@ -14,6 +14,7 @@ const Banner = memo(() => {
   );
 });
 
+// Component Name Declaration
 Banner.displayName = "Banner";
 
 export default Banner;

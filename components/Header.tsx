@@ -50,6 +50,7 @@ const Header = memo(() => {
   );
 });
 
+// Component Name Declaration
 Header.displayName = "Header";
 
 export default Header;
