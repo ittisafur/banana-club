@@ -1,3 +1,4 @@
+import ArtSlider from "@/components/ArtSlider";
 import Banner from "@/components/Banner";
 import type { NextPage } from "next";
 import { Fragment } from "react";
@@ -8,6 +9,7 @@ const Home: NextPage = () => {
     <Fragment>
       <Header />
       <Banner />
+      <ArtSlider />
     </Fragment>
   );
 };
