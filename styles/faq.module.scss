@@ -1,0 +1,80 @@
+.faq{
+  @apply py-5;
+  @apply md:py-16;
+  background: linear-gradient(228.02deg, #22577E 0%, #5584AC 100%, rgba(149, 209, 204, 0.5) 100%);
+
+  .wrapper{
+    @apply container;
+    @apply mx-auto;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply space-y-10;
+
+    .title {
+      @apply text-center;
+      @apply text-white;
+      @apply text-4xl;
+      @apply uppercase;
+      @apply font-GrilledCheese;
+      @apply tracking-widest;
+    }
+
+    .accordion {
+      @apply flex;
+      @apply flex-col;
+      @apply items-center;
+      @apply justify-center;
+      @apply space-y-7;
+      @apply max-w-5xl;
+      @apply w-11/12;
+
+      .heading{
+        @apply flex;
+        @apply justify-between;
+        @apply items-center;
+        @apply w-full;
+        @apply rounded-md;
+        @apply py-6;
+        @apply px-9;
+        background: linear-gradient(90.47deg, rgba(85, 132, 172, 0.58) 0.77%, rgba(149, 209, 204, 0.5) 99.06%);
+        box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.25);
+
+        h2{
+          @apply text-white;
+          @apply text-2xl;
+          @apply font-GrilledCheese;
+          @apply tracking-wide;
+        }
+        .icon{
+          @apply text-white;
+          @apply w-7;
+        }
+      } 
+      .content {
+        @apply bg-secondary; 
+        @apply py-5;
+        @apply px-8;
+        @apply w-full;
+        @apply rounded-md;
+        > div {
+          @apply text-[1.125rem];
+          @apply tracking-wider;
+          @apply font-ComicNeue;
+          @apply font-bold;
+          @apply text-white;
+        }
+      }
+    }
+  
+  }
+}
+
+.footer {
+  @apply self-start;
+  @apply text-white;
+  @apply text-sm;
+  @apply font-ComicNeue;
+  @apply font-light;
+}

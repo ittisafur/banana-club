@@ -14,7 +14,7 @@ const ArtSlider = memo(() => {
   SwiperCore.use([Autoplay]);
   return (
     <div>
-      <div className={cx("art-slider")}>
+      <div className={cx("art-slider")} id="#arts">
         <RightSlide />
         <LeftSlide />
         <LastRightSlide />
