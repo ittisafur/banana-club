@@ -2,6 +2,7 @@ import { memo } from "react";
 import bindClassNames from "classnames/bind";
 
 import styles from "@/styles/roadmap.module.scss";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const cx = bindClassNames.bind(styles);
 
