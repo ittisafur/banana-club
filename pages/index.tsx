@@ -1,11 +1,13 @@
-import ArtSlider from '@/components/ArtSlider';
-import Banner from '@/components/Banner';
-import RoadMap from '@/components/Roadmap';
-import Team from '@/components/Team';
-import Faq from '@/components/Faq';
+import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 import { Fragment, useRef } from 'react';
-import Header from '../components/Header';
+
+const DynamicHeader = dynamic(() => import('@/components/Header'));
+const DynamicBanner = dynamic(() => import('@/components/Banner'));
+const DynamicArtSlider = dynamic(() => import('@/components/ArtSlider'));
+const DynamicRoadMap = dynamic(() => import('@/components/Roadmap'));
+const DynamicTeam = dynamic(() => import('@/components/Team'));
+const DynamicFaq = dynamic(() => import('@/components/Faq'));
 
 const Home: NextPage = () => {
     const artSlider = useRef<HTMLDivElement>(null);
@@ -14,12 +16,12 @@ const Home: NextPage = () => {
     const faq = useRef<HTMLDivElement>(null);
     return (
         <Fragment>
-            <Header Arts={artSlider} Roadmap={roadmap} Team={team} Faq={faq} />
-            <Banner />
-            <ArtSlider Location={artSlider} />
-            <RoadMap Location={roadmap} />
-            <Team Location={team} />
-            <Faq
+            <DynamicHeader Arts={artSlider} Roadmap={roadmap} Team={team} Faq={faq} />
+            <DynamicBanner />
+            <DynamicArtSlider Location={artSlider} />
+            <DynamicRoadMap Location={roadmap} />
+            <DynamicTeam Location={team} />
+            <DynamicFaq
                 Location={faq}
                 items={[
                     {
