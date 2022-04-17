@@ -5,6 +5,11 @@
     /* background-repeat: no-repeat; */
     height: calc(100vh - 76px);
     @apply relative;
+    .image{
+
+    height: calc(100vh - 76px);
+      @apply w-full;
+    }
     .content {
       @apply absolute;
       top: 50%;

@@ -16,6 +16,7 @@ const Banner = memo(() => {
                     objectFit="cover"
                     objectPosition="center"
                     alt="Banana Banner"
+                    priority={false}
                 />
             </div>
             <div className={cx('content')}>

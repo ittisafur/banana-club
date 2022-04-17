@@ -4,5 +4,9 @@
     background: linear-gradient(180deg, #fcddb4 37.65%, rgba(149, 209, 204, 0.5) 100%);
     img {
         @apply rounded-md;
+        @apply max-w-xl;
+        @apply mx-auto;
+        @apply w-full;
+        @apply h-full;
     }
 }

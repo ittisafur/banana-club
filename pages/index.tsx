@@ -2,12 +2,24 @@ import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 import { Fragment, useRef } from 'react';
 
-const DynamicHeader = dynamic(() => import('@/components/Header'));
-const DynamicBanner = dynamic(() => import('@/components/Banner'));
-const DynamicArtSlider = dynamic(() => import('@/components/ArtSlider'));
-const DynamicRoadMap = dynamic(() => import('@/components/Roadmap'));
-const DynamicTeam = dynamic(() => import('@/components/Team'));
-const DynamicFaq = dynamic(() => import('@/components/Faq'));
+const DynamicHeader = dynamic(() => import('@/components/Header'), {
+    ssr: false,
+});
+const DynamicBanner = dynamic(() => import('@/components/Banner'), {
+    ssr: false,
+});
+const DynamicArtSlider = dynamic(() => import('@/components/ArtSlider'), {
+    ssr: false,
+});
+const DynamicRoadMap = dynamic(() => import('@/components/Roadmap'), {
+    ssr: false,
+});
+const DynamicTeam = dynamic(() => import('@/components/Team'), {
+    ssr: false,
+});
+const DynamicFaq = dynamic(() => import('@/components/Faq'), {
+    ssr: false,
+});
 
 const Home: NextPage = () => {
     const artSlider = useRef<HTMLDivElement>(null);

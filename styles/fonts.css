@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'GrilledCheese BTN Toasted';
     font-style: normal;
     font-weight: normal;
     src: url('/assets/fonts/GrilledCheese BTN Toasted.woff') format('woff');
+    font-display: swap;
 }

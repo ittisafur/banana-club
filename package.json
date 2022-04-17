@@ -1,38 +1,39 @@
 {
-    "name": "banana-club",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "prettier": "prettier -w .",
-        "analyze": "cross-env ANALYZE=true next build"
-    },
-    "dependencies": {
-        "@headlessui/react": "^1.5.0",
-        "@heroicons/react": "^1.0.6",
-        "@next/bundle-analyzer": "^12.1.5",
-        "classnames": "^2.3.1",
-        "cross-env": "^7.0.3",
-        "framer-motion": "^6.3.0",
-        "next": "12.1.5",
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "swiper": "^8.1.0"
-    },
-    "devDependencies": {
-        "@types/node": "17.0.23",
-        "@types/react": "18.0.4",
-        "@types/react-dom": "18.0.0",
-        "autoprefixer": "^10.4.4",
-        "eslint": "8.13.0",
-        "eslint-config-next": "12.1.5",
-        "postcss": "^8.4.12",
-        "prettier": "^2.6.2",
-        "sass": "^1.50.0",
-        "tailwindcss": "^3.0.24",
-        "typescript": "4.6.3"
-    }
+  "name": "banana-club",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier -w .",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "@next/bundle-analyzer": "^12.1.5",
+    "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "framer-motion": "^6.3.0",
+    "next": "12.1.5",
+    "react": "18.0.1",
+    "react-dom": "18.0.1",
+    "sharp": "^0.30.3",
+    "swiper": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "@types/react": "18.0.4",
+    "@types/react-dom": "18.0.0",
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "sass": "^1.50.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.6.3"
+  }
 }
