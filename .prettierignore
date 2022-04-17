@@ -1,0 +1,8 @@
+# Node Modules
+node_modules
+
+# Build Files
+.next
+
+# Yarn
+.yarn

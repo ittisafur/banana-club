@@ -1,5 +1,5 @@
 ## Todo
 
-- Add Arts
-- Add Animations
-- Optimize
+-   Add Arts
+-   Add Animations
+-   Optimize

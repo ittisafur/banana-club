@@ -1,65 +1,62 @@
-.roadmap{
-  @apply py-5;
-  @apply md:py-16;
-  background : linear-gradient(180deg, rgba(149, 209, 204, 0.5) 0%, rgba(250, 255, 175, 0.7) 100%);
+.roadmap {
+    @apply py-5;
+    @apply md:py-16;
+    background: linear-gradient(180deg, rgba(149, 209, 204, 0.5) 0%, rgba(250, 255, 175, 0.7) 100%);
 
-  .wrapper{
-    @apply container;
-    @apply mx-auto;
-    @apply flex;
-    @apply flex-col;
-    @apply items-center;
-    @apply justify-center;
-
-  }
-
-  .title {
-    @apply text-center;
-    @apply text-4xl;
-    @apply font-GrilledCheese;
-    @apply text-primary;
-    @apply uppercase;
-    @apply tracking-wide;
-    @apply mb-4;
-    @apply md:mb-10;
-  }
-
-  .content {
-      @apply flex;
-      @apply flex-col;
-      @apply items-start;
-      @apply justify-center;
-      @apply space-y-10;
-    .phase{
-      @apply max-w-2xl;
-      @apply w-11/12;
-      @apply mx-auto;
-      @apply bg-light-yellow-200;
-      @apply px-14;
-      @apply py-7;
-      @apply rounded-xl;
-      @apply text-primary;
-      @apply flex;
-      @apply flex-col;
-      @apply items-start;
-      @apply justify-center;
-      @apply space-y-3;
-      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-       h2{
-        @apply font-GrilledCheese;
-        @apply text-2xl;
-        @apply tracking-wide;
-      }  
-
-      p{
-        @apply font-ComicNeue;
-        @apply font-bold;
-        @apply leading-3;  
-        @apply text-lg;
-        @apply text-left;
-      }
-
+    .wrapper {
+        @apply container;
+        @apply mx-auto;
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+        @apply justify-center;
     }
-  }
 
+    .title {
+        @apply text-center;
+        @apply text-4xl;
+        @apply font-GrilledCheese;
+        @apply text-primary;
+        @apply uppercase;
+        @apply tracking-wide;
+        @apply mb-4;
+        @apply md:mb-10;
+    }
+
+    .content {
+        @apply flex;
+        @apply flex-col;
+        @apply items-start;
+        @apply justify-center;
+        @apply space-y-10;
+        .phase {
+            @apply max-w-2xl;
+            @apply w-11/12;
+            @apply mx-auto;
+            @apply bg-light-yellow-200;
+            @apply px-14;
+            @apply py-7;
+            @apply rounded-xl;
+            @apply text-primary;
+            @apply flex;
+            @apply flex-col;
+            @apply items-start;
+            @apply justify-center;
+            @apply space-y-3;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+            h2 {
+                @apply font-GrilledCheese;
+                @apply text-2xl;
+                @apply tracking-wide;
+            }
+
+            p {
+                @apply font-ComicNeue;
+                @apply font-bold;
+                @apply leading-3;
+                @apply text-lg;
+                @apply text-left;
+            }
+        }
+    }
 }

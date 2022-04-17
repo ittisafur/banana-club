@@ -1,62 +1,61 @@
-.team{
-  @apply py-5;
-  @apply md:py-16;
-  background: linear-gradient(180deg, rgba(250, 255, 175, 0.7) 0%, rgba(149, 209, 204, 0.5) 71.9%);
+.team {
+    @apply py-5;
+    @apply md:py-16;
+    background: linear-gradient(180deg, rgba(250, 255, 175, 0.7) 0%, rgba(149, 209, 204, 0.5) 71.9%);
 
-  .wrapper{
-    @apply container;
-    @apply mx-auto;
+    .wrapper {
+        @apply container;
+        @apply mx-auto;
 
-    .title{
-      @apply uppercase;
-      @apply text-primary;
-      @apply text-4xl;
-      @apply tracking-wider;
-      @apply font-GrilledCheese;
-      @apply text-center;
-      @apply mb-12;
-    }
-
-    .content{
-      @apply grid;
-      @apply grid-cols-1;
-      @apply gap-10;
-      @apply place-content-center;
-      @apply justify-items-center;
-      @apply md:grid-cols-2;
-      @apply lg:grid-cols-3;
-      @apply xl:grid-cols-4;
-
-      .member{
-        .image-wrapper{
-          @apply rounded-full;
-          @apply h-64;
-          @apply w-64;
-          filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
-
-          .image{
-            @apply object-cover;
-            @apply rounded-full;
-          }
-
+        .title {
+            @apply uppercase;
+            @apply text-primary;
+            @apply text-4xl;
+            @apply tracking-wider;
+            @apply font-GrilledCheese;
+            @apply text-center;
+            @apply mb-12;
         }
-        @apply text-primary;
-        h2 {
-          @apply text-2xl;
-          @apply font-GrilledCheese;
-          @apply text-center;
-          @apply tracking-wider;
-          @apply uppercase;
-          @apply mt-9;
-        } 
-        p {
-          @apply text-center;
-          @apply text-[1.125rem];
-          @apply tracking-wide;
-          @apply font-ComicNeue;
-          @apply font-bold;
+
+        .content {
+            @apply grid;
+            @apply grid-cols-1;
+            @apply gap-10;
+            @apply place-content-center;
+            @apply justify-items-center;
+            @apply md:grid-cols-2;
+            @apply lg:grid-cols-3;
+            @apply xl:grid-cols-4;
+
+            .member {
+                .image-wrapper {
+                    @apply rounded-full;
+                    @apply h-64;
+                    @apply w-64;
+                    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+
+                    .image {
+                        @apply object-cover;
+                        @apply rounded-full;
+                    }
+                }
+                @apply text-primary;
+                h2 {
+                    @apply text-2xl;
+                    @apply font-GrilledCheese;
+                    @apply text-center;
+                    @apply tracking-wider;
+                    @apply uppercase;
+                    @apply mt-9;
+                }
+                p {
+                    @apply text-center;
+                    @apply text-[1.125rem];
+                    @apply tracking-wide;
+                    @apply font-ComicNeue;
+                    @apply font-bold;
+                }
+            }
         }
-      }
     }
-  }
 }
