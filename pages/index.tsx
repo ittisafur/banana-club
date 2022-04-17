@@ -6,10 +6,17 @@ import Faq from "@/components/Faq";
 import type { NextPage } from "next";
 import { Fragment } from "react";
 import Header from "../components/Header";
+import { motion, useViewportScroll } from "framer-motion";
 
 const Home: NextPage = () => {
+  const { scrollYProgress } = useViewportScroll();
   return (
     <Fragment>
+      <motion.path
+        style={{
+          pathLength: scrollYProgress,
+        }}
+      />
       <Header />
       <Banner />
       <ArtSlider />
