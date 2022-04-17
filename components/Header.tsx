@@ -2,27 +2,26 @@ import { memo } from "react";
 import bindClassNames from "classnames/bind";
 
 import styles from "@/styles/header.module.scss";
-import Link from "next/link";
 
 const cx = bindClassNames.bind(styles);
 
 const Header = memo(() => {
   return (
-    <header className={cx("wrapper", "header")}>
+    <header className={cx("header")}>
       <div>
         <nav>
           <ul>
             <li>
-              <Link href="#arts">Arts</Link>
+              <a href="#arts">Arts</a>
             </li>
             <li>
-              <Link href="#roadmap">Roadmap</Link>
+              <a href="#roadmap">Roadmap</a>
             </li>
             <li>
-              <Link href="#teams">Teams</Link>
+              <a href="#teams">Teams</a>
             </li>
             <li>
-              <Link href="#faq">FAQ</Link>
+              <a href="#faq">FAQ</a>
             </li>
           </ul>
         </nav>
@@ -50,6 +49,7 @@ const Header = memo(() => {
   );
 });
 
+// Component Name Declaration
 Header.displayName = "Header";
 
 export default Header;

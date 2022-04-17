@@ -2,6 +2,8 @@
   @apply bg-light-yellow-300;
   @apply py-5;
   & > div {
+    @apply container;
+    @apply mx-auto;
     @apply flex;
     @apply flex-col;
     @apply gap-y-3;

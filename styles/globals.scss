@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html, body{
+  @apply scroll-smooth;
+}
 .wrapper{
   width: 100%;
   height: 100%;
