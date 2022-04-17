@@ -6,6 +6,6 @@ module.exports = withBundleAnalyzer({
     reactStrictMode: true,
     swcMinify: true,
     images: {
-        domains: ['bananaclub.ittisafur.com'],
+        domains: ['res.cloudinary.com'],
     },
 });

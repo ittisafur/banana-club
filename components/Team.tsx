@@ -52,7 +52,7 @@ const Members = memo(({ ImageSrc, Name, Position }: { ImageSrc: string; Name: st
     return (
         <div className={cx('member')}>
             <div className={cx('image-wrapper')}>
-                <Image src={ImageSrc} width={256} height={256} className={cx('image')} />
+                <Image src={ImageSrc} width={256} height={256} className={cx('image')} alt={Name} />
             </div>
 
             <h2>{Name}</h2>
