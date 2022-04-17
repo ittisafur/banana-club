@@ -1,5 +1,5 @@
 ## Todo
 
 - Add Arts
-- Add Animations
+- Add Animations ( WIP )
 - Optimize
