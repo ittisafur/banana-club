@@ -3,12 +3,10 @@
     /* background-size: cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
-    height: calc(100vh - 76px);
-    @apply relative;
+      @apply relative;
     .image{
-
-    height: calc(100vh - 76px);
       @apply w-full;
+      @apply h-full;
     }
     .content {
       @apply absolute;

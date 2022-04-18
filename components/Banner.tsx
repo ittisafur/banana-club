@@ -10,14 +10,7 @@ const Banner = memo(() => {
     return (
         <div className={cx('banner')}>
             <div className={cx('image')}>
-                <Image
-                    src="/assets/images/banner.jpg"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                    alt="Banana Banner"
-                    priority={false}
-                />
+                <Image src="/assets/images/banner.jpg" width={2500} height={900} alt="Banana Banner" priority={false} />
             </div>
             <div className={cx('content')}>
                 <h1>Banana Boys Club</h1>

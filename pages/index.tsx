@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 import { Fragment, useRef } from 'react';
+import Head from 'next/head';
 
 const DynamicHeader = dynamic(() => import('@/components/Header'), {
     ssr: false,
@@ -28,6 +29,13 @@ const Home: NextPage = () => {
     const faq = useRef<HTMLDivElement>(null);
     return (
         <Fragment>
+            <Head>
+                <title>Banana Boys Club</title>
+                <meta name="author" content="MD Ittisafur Rahman" />
+                <meta name="description" content="Banana Boys Club Arts" />
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <DynamicHeader Arts={artSlider} Roadmap={roadmap} Team={team} Faq={faq} />
             <DynamicBanner />
             <DynamicArtSlider Location={artSlider} />
