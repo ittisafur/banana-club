@@ -3,23 +3,30 @@
     /* background-size: cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
-      @apply relative;
-    .image{
-      @apply w-full;
-      @apply h-full;
+    @apply relative;
+    &.isMobile {
+        height: calc(100vh - 76px);
+        .image {
+            height: calc(100vh - 76px);
+            @apply w-full;
+        }
+    }
+    .image {
+        @apply w-full;
+        @apply h-full;
     }
     .content {
-      @apply absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      @apply flex;
-      @apply flex-col;
-      @apply items-center;
-      @apply justify-between;
-      @apply w-full;
-      @apply h-[40vh];
-      @apply 2xl:justify-evenly;
+        @apply absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+        @apply justify-between;
+        @apply w-full;
+        @apply h-[40vh];
+        @apply 2xl:justify-evenly;
         h1 {
             @apply font-GrilledCheese;
             @apply uppercase;
