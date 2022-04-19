@@ -2,8 +2,6 @@ import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 import { Fragment, useRef } from 'react';
 import Head from 'next/head';
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
 
 const DynamicHeader = dynamic(() => import('@/components/Header'), {
     ssr: false,
