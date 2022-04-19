@@ -12,7 +12,6 @@ const cx = bindClassNames.bind(styles);
 const Banner = memo(() => {
     const fullConfig = resolveConfig(twConfig);
     const [mobile, setMobile] = useState(isMobile);
-    console.log(mobile);
     return (
         <Fragment>
             {/* @ts-ignore */}
@@ -25,7 +24,10 @@ const Banner = memo(() => {
                             objectFit="cover"
                             objectPosition="center"
                             alt="Banana Banner"
-                            priority={false}
+                            loading="eager"
+                            placeholder="blur"
+                            blurDataURL={`/assets/images/banner.txt`}
+                            priority={true}
                         />
                     </div>
 
@@ -42,7 +44,10 @@ const Banner = memo(() => {
                             width={2500}
                             height={900}
                             alt="Banana Banner"
-                            priority={false}
+                            priority={true}
+                            loading="eager"
+                            placeholder="blur"
+                            blurDataURL={`/assets/images/banner.txt`}
                         />
                     </div>
 
