@@ -66,12 +66,12 @@ const Header = memo(({ Arts, Roadmap, Team, Faq }: { Arts: any; Roadmap: any; Te
                             <a
                                 href="https://medium.com/@BBCNFT_/banana-boyz-club-75174aae041b"
                                 target="_blank"
-                                referrerPolicy="no-referrer">
+                                rel="noreferrer">
                                 <img src="/assets/svg/medium.svg" alt="Medium Articles" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/BananaBoyzClub" target="_blank" referrerPolicy="no-referrer">
+                            <a href="https://twitter.com/BananaBoyzClub" target="_blank" rel="noreferrer">
                                 <img src="/assets/svg/twitter.svg" alt="Twitter" />
                             </a>
                         </li>
