@@ -33,6 +33,7 @@
     .icons {
         @apply flex;
         @apply gap-x-3;
+        @apply md:gap-x-5;
         img {
             @apply h-9;
             @apply w-9;
