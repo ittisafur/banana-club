@@ -72,7 +72,7 @@ const Header = memo(({ Arts, Roadmap, Team, Faq }: { Arts: any; Roadmap: any; Te
                         </li>
                         <li>
                             <a href="https://twitter.com/BananaBoyzClub" target="_blank" rel="noreferrer">
-                                <img src="/assets/svg/twitter.svg" alt="Twitter" />
+                                <img src="/assets/svg/twitter.svg" alt="Twitter Link" />
                             </a>
                         </li>
                     </ul>

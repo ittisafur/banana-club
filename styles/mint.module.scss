@@ -1,0 +1,96 @@
+.mint {
+    @apply py-5;
+    @apply h-screen;
+    @apply md:py-16;
+    background: linear-gradient(180deg, rgba(149, 209, 204, 0.5) 0%, rgba(250, 255, 175, 0.7) 100%);
+
+    .wrapper {
+        @apply h-full;
+        @apply container;
+        @apply mx-auto;
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+        @apply justify-center;
+
+        .mint-button {
+            @apply text-base;
+            @apply text-light-yellow-200;
+            @apply uppercase;
+            @apply font-GrilledCheese;
+            @apply px-16;
+            @apply py-5;
+            @apply rounded-md;
+            @apply bg-primary;
+            box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.25);
+            @apply focus:outline-none;
+            @apply focus:ring-primary;
+            @apply focus:ring-2;
+            @apply focus:ring-offset-slate-200;
+            @apply md:text-4xl;
+        }
+        /* Mint Button Ends */
+        .capping {
+            @apply flex;
+            @apply justify-center;
+            @apply items-center;
+            @apply gap-x-5;
+
+            .content {
+                @apply flex;
+                @apply justify-center;
+                @apply items-center;
+                @apply gap-x-5;
+                background: linear-gradient(228.02deg, #22577e 0%, #5584ac 100%, rgba(149, 209, 204, 0.5) 100%);
+                box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.25);
+                @apply rounded-md;
+                @apply px-5;
+                @apply py-2;
+                @apply my-5;
+
+                .counter {
+                    @apply text-primary;
+                    @apply text-2xl;
+                    @apply text-light-yellow-200;
+                }
+                /* Counter Ends */
+
+                .icons {
+                    @apply fill-primary;
+                    @apply text-light-yellow-200;
+                    @apply h-6;
+                    @apply w-6;
+                    @apply md:h-8;
+                    @apply md:w-8;
+                }
+                /* Icons Ends */
+            }
+            /* Content Ends */
+            .max-value {
+                @apply text-2xl;
+
+                @apply uppercase;
+                @apply font-ComicNeue;
+                @apply text-secondary;
+                @apply font-bold;
+                @apply tracking-wider;
+                animation: pulse 1s infinite;
+                @keyframes pulse {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.2);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+            /* Max Value Ends */
+        }
+        /* Capping Ends */
+    }
+    /* Wrapper Ends */
+}
+/* Mint Ends */

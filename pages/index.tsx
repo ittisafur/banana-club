@@ -13,13 +13,13 @@ const DynamicArtSlider = dynamic(() => import('@/components/ArtSlider'), {
     ssr: false,
 });
 const DynamicRoadMap = dynamic(() => import('@/components/Roadmap'), {
-    ssr: false,
+    ssr: true,
 });
 const DynamicTeam = dynamic(() => import('@/components/Team'), {
-    ssr: false,
+    ssr: true,
 });
 const DynamicFaq = dynamic(() => import('@/components/Faq'), {
-    ssr: false,
+    ssr: true,
 });
 
 const Home: NextPage = () => {

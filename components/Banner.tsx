@@ -6,6 +6,7 @@ import twConfig from '../tailwind.config.js';
 import { isMobile } from 'react-device-detect';
 
 import styles from '@/styles/banner.module.scss';
+import Link from 'next/link';
 
 const cx = bindClassNames.bind(styles);
 
@@ -33,7 +34,7 @@ const Banner = memo(() => {
 
                     <div className={cx('content')}>
                         <h1>Banana Boys Club</h1>
-                        <button>Coming Soon</button>
+                        <Link href="/mint">Mint Now</Link>
                     </div>
                 </div>
             ) : (
@@ -53,7 +54,7 @@ const Banner = memo(() => {
 
                     <div className={cx('content')}>
                         <h1>Banana Boys Club</h1>
-                        <button>Coming Soon</button>
+                        <Link href="/mint">Mint Now</Link>
                     </div>
                 </div>
             )}
