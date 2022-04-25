@@ -30,12 +30,25 @@
         h1 {
             @apply font-GrilledCheese;
             @apply uppercase;
-            @apply text-4xl;
+            @apply text-xl;
+            @apply md:text-4xl;
             @apply 2xl:text-6xl;
             @apply text-light-yellow-200;
             @apply tracking-wide;
             @apply text-center;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            animation: pulse 1s infinite;
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.2);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
         }
         a {
             @apply text-center;
