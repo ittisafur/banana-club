@@ -22,7 +22,7 @@ const DynamicFaq = dynamic(() => import('@/components/Faq'), {
     ssr: true,
 });
 
-const Home: NextPage = ({host }) => {
+const Home: NextPage = () => {
     const artSlider = useRef<HTMLDivElement>(null);
     const roadmap = useRef<HTMLDivElement>(null);
     const team = useRef<HTMLDivElement>(null);
@@ -90,4 +90,3 @@ const Home: NextPage = ({host }) => {
 };
 
 export default Home;
-
