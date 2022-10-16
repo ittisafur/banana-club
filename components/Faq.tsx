@@ -19,6 +19,7 @@ interface Props {
 
 const Faq = memo(({ items, Location }: Props) => {
     const location = window.location.host;
+  console.log(location);
     return (
         <div className={cx('faq')}>
             <div className={cx('wrapper')} ref={Location}>
