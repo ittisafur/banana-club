@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import type { NextPage } from 'next';
+import type { GetServerSideProps, NextPage } from 'next';
 import { Fragment, useRef } from 'react';
 import Head from 'next/head';
 
@@ -22,7 +22,7 @@ const DynamicFaq = dynamic(() => import('@/components/Faq'), {
     ssr: true,
 });
 
-const Home: NextPage = () => {
+const Home: NextPage = ({host }) => {
     const artSlider = useRef<HTMLDivElement>(null);
     const roadmap = useRef<HTMLDivElement>(null);
     const team = useRef<HTMLDivElement>(null);
@@ -90,3 +90,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+

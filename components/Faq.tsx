@@ -18,6 +18,7 @@ interface Props {
 }
 
 const Faq = memo(({ items, Location }: Props) => {
+  const location = window.location.host;
     return (
         <div className={cx('faq')}>
             <div className={cx('wrapper')} ref={Location}>
@@ -49,7 +50,9 @@ const Faq = memo(({ items, Location }: Props) => {
 
                 <footer className={cx('footer')}>
                     <p> &copy; Copyright 2022 Banana NFT. All Rights reserved.</p>
-                    <a href="#">Terms and Conditions</a>
+                    {
+                      location === "https://bananaclub.ittisafur.com/" ? <a href="ittisafur.com">Designed and developed by Ittisafur</a> : <a href="#">Terms and Conditions</a>
+                    }
                 </footer>
             </div>
         </div>
